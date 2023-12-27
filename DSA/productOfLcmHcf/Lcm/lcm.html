@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const number1 = prompt("enter first positive integer value");
+        const number2 = prompt("enter second positive integer value");
+        function findLcm(number1,number2){
+            let max = (number1>number2) ? number1 : number2;
+            let lcm =max;
+            while(true){
+                if(lcm%number1===0 && lcm%number2===0)
+                {
+                    break;
+                }
+                lcm++;
+            }
+            console.log(`LCM${lcm}`);
+            document.write("LCM :",lcm);
+        }
+        
+        findLcm(number1,number2);
+
+    </script>
+</body>
+</html>

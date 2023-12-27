@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const number1 = prompt("enter first positive integer value");
+        const number2 = prompt("enter second positive integer value");
+        function findHcf(number1,number2){
+            let min = (number1<number2) ? number1 : number2;
+            for(let i=1;i<=min;i++){
+                if(number1%i===0 && number2%i===0){
+                    hcf=i;
+                }
+            }
+            console.log(`HCF${hcf}`);
+            document.write("HCF :",hcf);
+        }
+        
+        findHcf(number1,number2);
+
+    </script>
+</body>
+</html>
