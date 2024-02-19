@@ -10,7 +10,8 @@ function findSumPairs(arr, targetSum) {
             }
         }
     }
-    console.log(newArr.toString());
+    return newArr;
+    //console.log(newArr.toString());
     }
 
     const arr = [2,4,6,8,10];

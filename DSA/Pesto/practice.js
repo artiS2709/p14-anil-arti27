@@ -1,22 +1,18 @@
-function findSumPairs(arr, targetSum) {
-    //TODO: Implement the function findSumPairs
-    //const newArr = [];
-    let str = '';
-    for(let i=0;i<arr.length;i++){
-        for(let j=i;j<arr.length;j++){
-            if(arr[i]+arr[j]==targetSum && i!=j){
-                //newArr.push(arr[i],arr[j]);
-                str +=","+arr[i]+","+arr[j];
-                
-                console.log(str);
+function findIntersection(arr1, arr2) {
+//TODO: Implement the function findIntersection
+    const setFirst = new Set(arr1);
+         const setSecond = new Set(arr2);
+         let intersection = [];
+         for (let i of setSecond) {
+            if (setFirst.has(i)) {
+               intersection.push(i);
             }
-        }
-    }
-    //console.log(newArr.toString());
-    }
+         }
+         //return intersection; 
+         console.log(intersection);
+}
 
-    const arr = [2,4,6,8,10];
-    const targetSum = 12;
-    findSumPairs(arr,targetSum);
-    
-    
+    const arr1 = [1,2,3,4,5];
+    const arr2 = [4,5,6,7,8];
+
+    findIntersection(arr1,arr2);
